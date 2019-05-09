@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mydb = new words(this);
+        inputWord =findViewById(R.id.inputID);
 
         inputWord = findViewById(R.id.inputID);
 
