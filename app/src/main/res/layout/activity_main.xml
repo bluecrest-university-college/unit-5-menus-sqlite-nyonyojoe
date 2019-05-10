@@ -1,16 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="wrap_content"
-    android:layout_gravity="center"
     tools:context=".MainActivity">
 
-        <AutoCompleteTextView
-            android:id="@+id/inputID"
+        <EditText
+            android:id="@+id/ID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Input Name" />
+            android:hint="Type ID"
+            android:inputType="text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"/>
 
-</RelativeLayout>
+        <EditText
+            android:id="@+id/correctID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Correct Word"
+            android:inputType="text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/misspeltID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Misspelt Word"
+            android:inputType="text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/add_ID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="ADD"/>
+
+                <Button
+                    android:id="@+id/update_ID"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="UPDATE"/>
+
+                <Button
+                    android:id="@+id/delete_ID"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="DELETE"/>
+
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+</LinearLayout>
